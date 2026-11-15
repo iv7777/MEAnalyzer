@@ -37,7 +37,7 @@ jobs:
 
       - name: Smoke test (show help and exit)
         working-directory: package/MEA
-        run: .\MEA.exe -? -exit -duc
+        run: .\MEA.exe -? -skip -exit -duc
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v6
